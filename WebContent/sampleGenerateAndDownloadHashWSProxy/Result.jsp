@@ -78,7 +78,12 @@ case 13:
         if(!modeParam_3id.equals("")){
          modeParam_3idTemp  = modeParam_3id;
         }
-        it.dsestili.mywebproject.ws.Result generateAndDownloadHash13mtemp = sampleGenerateAndDownloadHashWSProxyid.generateAndDownloadHash(folder_1idTemp,algorithm_2idTemp,modeParam_3idTemp);
+        String token_4id=  request.getParameter("token24");
+            java.lang.String token_4idTemp = null;
+        if(!token_4id.equals("")){
+         token_4idTemp  = token_4id;
+        }
+        it.dsestili.mywebproject.ws.Result generateAndDownloadHash13mtemp = sampleGenerateAndDownloadHashWSProxyid.generateAndDownloadHash(folder_1idTemp,algorithm_2idTemp,modeParam_3idTemp,token_4idTemp);
 if(generateAndDownloadHash13mtemp == null){
 %>
 <%=generateAndDownloadHash13mtemp %>
@@ -113,7 +118,6 @@ it.dsestili.mywebproject.ws.FileInfo[] typeresult16 = generateAndDownloadHash13m
         }
 }%>
 </TABLE>
-
 <%
 }
 break;

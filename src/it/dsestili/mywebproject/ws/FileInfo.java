@@ -22,10 +22,6 @@ public class FileInfo  implements java.io.Serializable {
            this.hashCode = hashCode;
     }
 
-    @Override
-    public String toString() {
-    	return hashCode + " *" + fileName;
-    }
 
     /**
      * Gets the fileName value for this FileInfo.

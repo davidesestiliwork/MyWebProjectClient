@@ -31,6 +31,8 @@ public class GenerateAndDownloadHashWSSoapBindingStub extends org.apache.axis.cl
         oper.addParameter(param);
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://ws.mywebproject.dsestili.it", "modeParam"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://ws.mywebproject.dsestili.it", "token"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://ws.mywebproject.dsestili.it", "Result"));
         oper.setReturnClass(it.dsestili.mywebproject.ws.Result.class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://ws.mywebproject.dsestili.it", "generateAndDownloadHashReturn"));
@@ -158,7 +160,7 @@ public class GenerateAndDownloadHashWSSoapBindingStub extends org.apache.axis.cl
         }
     }
 
-    public it.dsestili.mywebproject.ws.Result generateAndDownloadHash(java.lang.String folder, java.lang.String algorithm, java.lang.String modeParam) throws java.rmi.RemoteException {
+    public it.dsestili.mywebproject.ws.Result generateAndDownloadHash(java.lang.String folder, java.lang.String algorithm, java.lang.String modeParam, java.lang.String token) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -174,7 +176,7 @@ public class GenerateAndDownloadHashWSSoapBindingStub extends org.apache.axis.cl
 
         setRequestHeaders(_call);
         setAttachments(_call);
- try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {folder, algorithm, modeParam});
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {folder, algorithm, modeParam, token});
 
         if (_resp instanceof java.rmi.RemoteException) {
             throw (java.rmi.RemoteException)_resp;

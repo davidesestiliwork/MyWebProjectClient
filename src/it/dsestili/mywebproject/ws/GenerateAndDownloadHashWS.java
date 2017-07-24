@@ -8,5 +8,5 @@
 package it.dsestili.mywebproject.ws;
 
 public interface GenerateAndDownloadHashWS extends java.rmi.Remote {
-    public it.dsestili.mywebproject.ws.Result generateAndDownloadHash(java.lang.String folder, java.lang.String algorithm, java.lang.String modeParam) throws java.rmi.RemoteException;
+    public it.dsestili.mywebproject.ws.Result generateAndDownloadHash(java.lang.String folder, java.lang.String algorithm, java.lang.String modeParam, java.lang.String token) throws java.rmi.RemoteException;
 }

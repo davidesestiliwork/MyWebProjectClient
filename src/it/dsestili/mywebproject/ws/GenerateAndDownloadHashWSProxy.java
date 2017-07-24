@@ -44,10 +44,10 @@ public class GenerateAndDownloadHashWSProxy implements it.dsestili.mywebproject.
     return generateAndDownloadHashWS;
   }
   
-  public it.dsestili.mywebproject.ws.Result generateAndDownloadHash(java.lang.String folder, java.lang.String algorithm, java.lang.String modeParam) throws java.rmi.RemoteException{
+  public it.dsestili.mywebproject.ws.Result generateAndDownloadHash(java.lang.String folder, java.lang.String algorithm, java.lang.String modeParam, java.lang.String token) throws java.rmi.RemoteException{
     if (generateAndDownloadHashWS == null)
       _initGenerateAndDownloadHashWSProxy();
-    return generateAndDownloadHashWS.generateAndDownloadHash(folder, algorithm, modeParam);
+    return generateAndDownloadHashWS.generateAndDownloadHash(folder, algorithm, modeParam, token);
   }
   
   

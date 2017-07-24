@@ -68,8 +68,7 @@ valid = false;
 <TABLE>
 <TR>
 <TD COLSPAN="1" ALIGN="LEFT">algorithm:</TD>
-<TD ALIGN="left">
-	<select name="algorithm20">
+<TD ALIGN="left">	<select name="algorithm20">
 		<option>MD2</option>
 		<option>MD5</option>
 		<option selected="selected">SHA-1</option>
@@ -82,14 +81,19 @@ valid = false;
 </TABLE>
 <TABLE>
 <TR>
-<TD COLSPAN="1" ALIGN="LEFT">mode:</TD>
-<TD ALIGN="left">
-	<select name="modeParam22">
+<TD COLSPAN="1" ALIGN="LEFT">modeParam:</TD>
+<TD ALIGN="left">	<select name="modeParam22">
 		<option selected="selected" value="not-recursive">Non ricorsivo</option>
 		<option value="recursive">Ricorsivo</option>
 		<option value="no-subfolders">Senza sottocartelle</option>
 	</select>
 </TD>
+</TR>
+</TABLE>
+<TABLE>
+<TR>
+<TD COLSPAN="1" ALIGN="LEFT">token:</TD>
+<TD ALIGN="left"><INPUT TYPE="TEXT" NAME="token24" SIZE=20></TD>
 </TR>
 </TABLE>
 <BR>
